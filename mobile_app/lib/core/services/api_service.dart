@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  // Change this when testing on a real device
-  static const String baseUrl = 'http://localhost:5000/api';
+  // Connected to live Vercel backend - this will work anywhere, including the university!
+  static const String baseUrl = 'https://anti-diabetes-ai-app3-0-deployable.vercel.app/api';
 
   static Future<http.Response> post(
     String endpoint,
